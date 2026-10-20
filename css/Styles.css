@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #1E3A8A; /* azul */
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+}
+
+.logo span {
+    color: #FACC15; /* amarillo */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #FACC15;
+}
+.hero {
+    background-color: #FACC15; /* amarillo */
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: #1E3A8A;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #1E3A8A;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #16296b;
+}.categoria {
+    padding: 60px 40px;
+}
+
+.categoria h2 {
+    color: #1E3A8A;
+    font-size: 28px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #FACC15;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.card .precio {
+    color: #1E3A8A;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.card button {
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+.carrito-icono {
+    color: white;
+    font-weight: bold;
+    margin-left: 25px;
+    font-size: 18px;
+}
+
+#contador-carrito {
+    background-color: #FACC15;
+    color: #1E3A8A;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 14px;
+}
+.panel-carrito {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 320px;
+    height: 100%;
+    background: white;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    padding: 20px;
+    transition: transform 0.3s ease;
+    z-index: 100;
+}
+
+.panel-carrito.oculto {
+    transform: translateX(100%);
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #FACC15;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#cerrar-carrito {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.item-carrito {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+}
+
+.panel-footer {
+    margin-top: 20px;
+    border-top: 2px solid #1E3A8A;
+    padding-top: 15px;
+}
+
+.panel-footer p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.quitar-item {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+.quitar-item:hover {
+    color: #e11d48;
+}
+#form-checkout input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#mensaje-checkout {
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#mensaje-checkout.exito {
+    color: #16a34a;
+}
+
+#mensaje-checkout.error {
+    color: #dc2626;
+}
+
+.opciones-entrega {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.opciones-entrega label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    cursor: pointer;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+form-checkout .opciones-entrega input[type="radio"] {
+    width: auto;
+    margin: 0;
+}
+
+.card .btn-agotado {
+    background-color: #9ca3af;
+    cursor: not-allowed;
+}

@@ -1,0 +1,212 @@
+.login-container {
+    max-width: 350px;
+    margin: 100px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-container .logo {
+    margin-bottom: 25px;
+}
+
+.login-container .logo small {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+#form-login input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#form-login .btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+#login-error {
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 12px;
+}
+.login-container .logo {
+    color: #1E3A8A; /* azul, en vez del blanco que hereda del navbar */
+}
+body {
+    background-color: #1E293B; /* gris azulado oscuro, se ve profesional para un panel admin */
+    min-height: 100vh;
+}
+.admin-panel {
+    background-color: #1E293B;
+    min-height: 100vh;
+}
+
+.btn-logout {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.admin-contenido {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.admin-card {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.admin-card h2 {
+    color: #1E3A8A;
+    margin-bottom: 15px;
+}
+
+#form-nuevo-producto input,
+#form-nuevo-producto select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.producto-admin-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.stock-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.stock-normal { background: #dcfce7; color: #16a34a; }
+.stock-bajo { background: #fef9c3; color: #ca8a04; }
+.stock-agotado { background: #fee2e2; color: #dc2626; }
+
+.input-stock-editable {
+    width: 60px;
+    padding: 4px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.producto-vista {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.producto-acciones {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-icono {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+}
+
+.oculto-admin {
+    display: none;
+}
+
+.producto-edicion {
+    margin-top: 10px;
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.producto-edicion input,
+.producto-edicion select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.edicion-botones {
+    display: flex;
+    gap: 10px;
+}
+
+.edicion-botones .btn {
+    flex: 1;
+    padding: 8px;
+    font-size: 14px;
+}
+
+.btn-cancelar-edicion {
+    flex: 1;
+    background: #e5e7eb;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pedido-item {
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+.pedido-cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.pedido-item ul {
+    margin: 8px 0 8px 20px;
+}
+
+.pedido-estado {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.estado-pendiente { background: #fef9c3; color: #ca8a04; }
+.estado-entregado { background: #dcfce7; color: #16a34a; }
+
+.btn-entregar {
+    margin-top: 10px;
+    padding: 8px 14px;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValleShop - Panel Admin</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin-panel">
+
+    <header class="navbar">
+        <h1 class="logo">Valle<span>Shop</span> <small>Admin</small></h1>
+        <button id="btn-cerrar-sesion" class="btn-logout">Cerrar sesión</button>
+    </header>
+
+    <main class="admin-contenido">
+
+        <!-- FORMULARIO PARA AGREGAR PRODUCTO -->
+        <section class="admin-card">
+            <h2>Agregar nuevo producto</h2>
+            <form id="form-nuevo-producto">
+                <input type="text" id="nuevo-nombre" placeholder="Nombre del producto" required>
+                <input type="number" id="nuevo-precio" placeholder="Precio (ej: 50000)" required>
+                
+                <select id="nuevo-categoria" required>
+                    <option value="">Selecciona categoría</option>
+                </select>
+
+                
+                <input type="number" id="nuevo-stock" placeholder="Stock inicial" required>
+                <input type="text" id="nuevo-imagen" placeholder="URL de imagen (opcional)">
+                <button type="submit" class="btn">Agregar producto</button>
+            </form>
+            <p id="mensaje-admin"></p>
+        </section>
+
+        <!-- LISTA DE PRODUCTOS EXISTENTES -->
+        <section class="admin-card">
+            <h2>Productos actuales</h2>
+            <div id="lista-productos-admin"></div>
+        </section>
+
+      <section class="admin-card">
+    <h2>Categorías</h2>
+    <form id="form-nueva-categoria">
+        <input type="text" id="nueva-cat-nombre" placeholder="Nombre (ej: Hogar)" required>
+        <button type="submit" class="btn">Agregar categoría</button>
+    </form>
+    <div id="lista-categorias-admin"></div>
+</section>
+
+<section class="admin-card">
+    <h2>Pedidos de clientes</h2>
+    <div id="lista-pedidos-admin"></div>
+</section>  
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

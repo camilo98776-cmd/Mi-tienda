@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ValleShop</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+        <nav>
+            <a href="#tecnologia">Tecnología</a>
+            <a href="#ropa">Ropa</a>
+            <a href="#calzado">Calzado</a>
+            <a href="#contacto">Contacto</a>
+                <span class="carrito-icono" id="abrir-carrito">🛒 <span id="contador-carrito">0</span></span>
+        </nav>
+    </header>
+
+       <!-- SECCIÓN DE BIENVENIDA -->
+    <section class="hero">
+        <h2>Todo lo que necesitas, en un solo lugar</h2>
+        <p>Tecnología, ropa y calzado para tu estilo de vida</p>
+        <a href="#tecnologia" class="btn">Ver productos</a>
+    </section>
+
+       <div id="categorias-contenedor"></div>
+        <!-- PANEL DEL CARRITO -->
+         
+    <div id="panel-carrito" class="panel-carrito oculto">
+        <div class="panel-header">
+            <h3>Tu Carrito</h3>
+            <span id="cerrar-carrito">✕</span>
+        </div>
+        <div id="lista-carrito"></div>
+        <div class="panel-footer">
+            <p>Total: <span id="total-carrito">$0</span></p>
+
+    <div id="form-checkout">
+        <input type="text" id="input-nombre" placeholder="Tu nombre completo">
+        <input type="tel" id="input-telefono" placeholder="Tu teléfono (WhatsApp)">
+        <input type="email" id="input-email" placeholder="Tu correo (opcional)">
+
+    <div class="opciones-entrega">
+            <label>
+                <input type="radio" name="entrega" value="domicilio" checked>
+                Envío a domicilio
+            </label>
+            <label>
+                <input type="radio" name="entrega" value="recoger">
+                Recoger en tienda
+            </label>
+    </div>
+
+    <input type="text" id="input-direccion" placeholder="Dirección de entrega">
+
+    <button class="btn" id="btn-finalizar">Finalizar Compra</button>
+</div>
+
+        <p id="mensaje-checkout"></p>
+        </div>
+    </div>
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+        <script src="js/supabase-productos.js"></script>
+        <script src="js/carrito.js"></script>
+
+</body>
+</html>
